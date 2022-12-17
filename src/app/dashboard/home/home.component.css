@@ -106,3 +106,18 @@
     opacity:0.5;
     height:100%;
   }
+  .about-us{
+    background-color: #f992a6;
+    background-size:cover;
+    background-position: center;
+  }
+  .row{
+    margin: initial !important;
+  }
+  .subscribe{
+    max-width: 500px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 60px;
+    background:#ffffff8c;
+  }
