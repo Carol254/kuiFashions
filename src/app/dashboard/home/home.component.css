@@ -152,23 +152,25 @@
     min-width: bold;
     text-align: center;
   }
-
   /* fashion-brands  */
-
   .fashion-brands{
-    margin: 450px 0 150px 0;
+    margin-bottom: 150px;
   }
   .brand-logo {
     width: 200px;
     height: 200px;
     background: #ffffff;
     border-radius: 50%;
-    margin: 50px auto 30px;
+    position:relative;
+    overflow:hidden;
     box-shadow: 0 2px 40px 0 rgba(110, 130, 208, 0.18);
+    margin: 50px auto 30px;
   }
-  .brand-logo img {
-    width: 150px;
-    margin: 50px auto;
+  .brand-pic {
+   display: inline;
+   margin:0 auto;
+   height:100%;
+   width:auto;
   }
   
   .fashion-brands p {
