@@ -177,4 +177,41 @@
     margin-top: 30px;
     font-weight: bold;
   }
+  /* footer */
+  .footer{
+    margin-top:150px;
+    background-color:#f5f6fc ;
+  }
+  .payment,
+  .our-stories,
+  .app-download{
+    margin:50px auto;
+  }
+  
+.payment img {
+  width: 200px;
+  cursor: pointer;
+}
+.insta-img img {
+  width: 75px;
+  padding: 5px;
+  cursor: pointer;
+}
+.app-download img {
+  width: 200px;
+  padding: 5px;
+}
+.footer h5 {
+  margin-bottom: 40px;
+}
+
+.footer-icons {
+  text-align: right;
+}
+.footer-icons img {
+  margin: 0 10px auto;
+  width:20px;
+  height:20px;
+  cursor: pointer;
+}
  
