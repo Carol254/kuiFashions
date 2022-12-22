@@ -10,22 +10,34 @@
             <a class="nav-link active" aria-current="page" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">SHOP</a>
+            <a class="nav-link active" 
+            routerLink="dashboard/shop"
+            routerLinkActive="active"
+            >SHOP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">ABOUT US</a>
+            <a class="nav-link active"
+            routerLink="dashboard/about-us"
+            routerLinkActive="active"
+            >ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">INSIGHTS</a>
+            <a class="nav-link active"
+            routerLink="dashboard/insights"
+            routerLinkActive="active"
+            >INSIGHTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">CONTACT US</a>
+            <a class="nav-link active"
+            routerLink="dashboard/contact-us"
+            routerLinkActive="active"
+            >CONTACT US</a>
           </li>
         </ul>
         <div class="d-flex">
           <img  class="cart" src="/assets/cart4.svg">
-          <div class="btn">Sign In</div>
-          <div class="btn">Sign Up</div>
+          <div class="btn"(click)="onSignIn()">Sign In</div>
+          <div class="btn"(click)="onSignUp()">Sign Up</div>
         </div>
       </div>
     </div>

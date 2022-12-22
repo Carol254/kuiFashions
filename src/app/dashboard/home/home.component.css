@@ -184,9 +184,11 @@
   }
   .payment,
   .our-stories,
-  .app-download{
+  .app-download
+  {
     margin:40px auto 20px;
   }
+
   
 .payment img {
   width: 200px;
@@ -203,8 +205,6 @@
 .app-download img {
   width: 300px;
   display: block;
-  padding:1px;
-  
 }
 
 .footer h5 {
