@@ -12,3 +12,12 @@
     cursor: pointer;
     
 }
+.nav-item{
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+
