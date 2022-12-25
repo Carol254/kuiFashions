@@ -62,9 +62,7 @@
     padding: 7px;
     font-size: 1rem;
   }
-  .input-group input:focus {
-    box-shadow: 0 0 0 3px #FF5252;
-  }
+ 
   button {
     padding: 10px;
     margin-top: 20px;
@@ -79,6 +77,13 @@
     button:hover {
   background: hsl(0, 100%, 76%);
     }
+    .form-group input.ng-invalid.ng-touched{
+      border: 10px solid blue;
+    }
+    .input-group input.ng-invalid.ng-touched{
+      border: 10px solid blue;
+    }
+
     @media (max-width: 700px){
         .container {
           flex-direction: column;
