@@ -3,21 +3,34 @@
         <div class="container">
             <div class="heading">
                 <h1>Join the<span>fun</span></h1>
-                
             </div>
             <div class="form-container">
-                <form>
-                    <div class="input-group">
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
+                        <input 
+                        type="text" 
+                        id="name" 
+                        class="form-control"
+                        ngModel
+                        name="username">
                     </div>
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="Email">
+                        <input 
+                        type="email" 
+                        id="email" 
+                        ngModel
+                        name="Email">
                     </div>
-                    <div class="input-group">
+                    <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="Password" id="Password" name="Password">
+                        <input 
+                        type="Password" 
+                        id="Password" 
+                        class="form-control"
+                        ngModel
+                        name="Password">
                     </div>
                     <button>Join Now</button>
                 </form>
