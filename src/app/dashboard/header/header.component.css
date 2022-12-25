@@ -2,9 +2,13 @@
     margin:0;
     padding: 0;
 }
+.navbar{
+    height:50px;
+}
 .cart{
     width:25px;
     height:25px;
-    margin-top: 3px;
+    margin-top: 2px;
     cursor: pointer;
+    
 }
