@@ -1,4 +1,4 @@
-<body>
+
     <div class="fullscreen-container">
         <div class="container">
             <div class="heading">
@@ -16,6 +16,19 @@
                         name="username"
                         required>
                     </div>
+                    <span>Please Select Gender</span>
+                    <div class="radio" *ngFor="let gender of genders">
+                        <label>
+                         <input 
+                         type="radio"
+                         name="gender"
+                         ngModel
+                         [value]="gender"
+                         required
+                         >
+                         {{gender}}
+                        </label>
+                     </div>
                     <div class="input-group">
                         <label for="email">Email</label>
                         <input 
@@ -26,7 +39,7 @@
                         required
                         email
                         #email="ngModel">
-                        <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email</span>
+                        <span class="help-block" style="color:red;" *ngIf="!email.valid && email.touched">Please enter a valid email</span>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -54,4 +67,3 @@
             </div>
         </div>
     </div>
-</body>

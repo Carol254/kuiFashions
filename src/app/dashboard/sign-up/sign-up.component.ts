@@ -7,8 +7,9 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./sign-up.component.css']
 })
 
+
 export class SignUpComponent implements OnInit {
- 
+  genders=['male','female'];
 
   constructor() { 
   
