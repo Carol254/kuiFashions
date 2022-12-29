@@ -8,15 +8,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SignInComponent implements OnInit {
 
-  genders = ['male', 'female'];
-  
-
   constructor() { }
 
    signinForm = new FormGroup({
     'username': new FormControl(null,Validators.required),
     'email': new FormControl(null,[Validators.required,Validators.email]),
-    'gender':new FormControl('female')
+    'password': new FormControl(null,Validators.required),
   });
   ngOnInit(): void {
  
