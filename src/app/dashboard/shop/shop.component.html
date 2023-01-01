@@ -1,1 +1,15 @@
-<p>shop works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <a href="#" 
+        class="list-group-item clearfix"
+        *ngFor="let menu of menus">
+         <div class="pull-left">
+            <h4>{{menu.name}}</h4>
+            <h4>{{menu.description}}</h4>
+         </div>
+         <div class="pull-right">
+            <img src="{{menu.imagePath}}" alt="{{menu.name}}" class="img-responsive">
+         </div>
+        </a>
+    </div>
+</div>
