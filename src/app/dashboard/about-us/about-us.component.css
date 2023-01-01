@@ -57,6 +57,7 @@ line-height: 24px;
 color: #00aeef;
 font-weight: 500;
 margin-bottom: 15px;
+margin-top: 20px;
 }
 
 .sec-title h2{
@@ -67,6 +68,7 @@ line-height: 1.28em;
 color: #222222;
 font-weight: 600;
 padding-bottom:18px;
+padding-top: 25px;
 }
 
 .sec-title h2:before{
