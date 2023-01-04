@@ -5,13 +5,18 @@ body {
   }
   
   .green-contact-form {
-    width: 700px;
+    /* width: 700px; */
     margin:0 auto;
     border-radius:10px;
   }
   
-  .title-form {
-    max-width: 550px;
+  .btn{
+    margin-top: 10px;
   }
-  
+  .contact-img{
+    border-radius:25px;
+  }
+  .title-form {
+    text-align: center;
+  }
   
