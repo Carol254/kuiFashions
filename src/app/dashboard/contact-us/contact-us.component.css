@@ -19,4 +19,22 @@ body {
   .title-form {
     text-align: center;
   }
+ .contact-info{
+  position: relative;
+  width: 300px;
+ }
+ .contact-img{
+  border-radius: 20px;
+ }
+  .sub-contact-info{
+    background-color: #f992a6;
+    position:absolute;
+    right: -200px; 
+    bottom: -40px;
+    width: 250px;
+    height:200px;
+    color:#000;
+    border-radius: 20px;
+    
+  }
   
