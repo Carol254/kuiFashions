@@ -27,11 +27,32 @@ body {
   border-radius: 20px;
  }
 
+ .bottom{
+  justify-content: flex-end;
+}
+
   .flower-img{
-    width:100px;
-    height:100px;
+    width:50px;
+    height:50px;
     border-radius: 50%;
   }
-  .bottom{
-    margin-left:auto;
+
+  .zoom-in-zoom-out {
+    margin: 24px;
+    width:50px;
+    height:50px;
+    animation: zoom-in-zoom-out 2s ease-out infinite;
   }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+ 
