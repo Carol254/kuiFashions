@@ -19,7 +19,7 @@ export class ShopComponent implements OnInit {
     new MenuData('Pink Top','Awesome Pink top size-9','/assets/pink-top.jpg'),
     new MenuData('Orange Top','Awesome Orange top size-9','/assets/orange top.jpg'),
     new MenuData('Stripped Top','Awesome Stripped top size-9','/assets/stripped-top.jpg'),
-    new MenuData('Beige Top','Awesome Orange top size-9','/assets/model_3.jpg'),
+    new MenuData('Beige Top','Awesome Beige top size-9','/assets/model_3.jpg'),
   ];
 
   constructor() { }

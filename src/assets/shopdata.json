@@ -41,19 +41,22 @@
         "Description":"grey suit size-10",
         "img":"/assets/grey suit.jpg",
         "Amount":"ksh.700"
-      },   {
+      },   
+      {
         "id": "7",
         "Name":"Orange Top",
         "Description":"Awesome Orange top size-9",
         "img":"/assets/orange top.jpg",
         "Amount":"ksh.900"
-      },   {
+      },   
+      {
         "id": "8",
         "Name":"Polka Top",
         "Description":"Awesome Polka top size-12",
         "img":"/assets/polka-dot top.jpg",
         "Amount":"ksh.700"
-      },   {
+      },   
+      {
         "id": "9",
         "Name":"Pink Blazer",
         "Description":"Awesome Pink Blazer size-9",
@@ -72,6 +75,20 @@
         "Description":"Awesome Stripped top size-9",
         "img":"/assets/stripped-top.jpg",
         "Amount":"ksh.500"
+      },
+      {
+        "id":"11",
+        "Name":"Beige Top",
+        "Description":"Awesome Beige top size-9",
+        "img":"/assets/model_3.jpg",
+        "Amount":"ksh.750"
+      },
+      {
+        "id": "12",
+        "Name": "Denim Top",
+        "Description": "Awesome denim top size-10",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.400"
       }
     ]
 }
