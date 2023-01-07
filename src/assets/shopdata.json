@@ -1,0 +1,64 @@
+{
+    "shoppingData": [
+      {
+        "id": "1",
+        "Name": "Ragged Jeans",
+        "Description": "Awesome ripped jeans size-10",
+        "img":"/assets/ragged-jeans.jpg",
+        "Amount":"ksh.500"
+      },
+      {
+        "id": "2",
+        "Name": "Black sweat top",
+        "Description": "Sweat top size-10",
+        "img":"/assets/black sweat-top.jpg",
+        "Amount":"ksh.600"
+      },
+      {
+        "id": "3",
+        "Name":"Black & White dress",
+        "Description":"Awesome dress size-8",
+        "img":"assets/black&white dress.jpg",
+        "Amount":"ksh.400"
+      },
+      {
+        "id": "4",
+        "Name": "Denim Top",
+        "Description": "Awesome denim top size-10",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.400"
+      },
+      {
+        "id": "5",
+        "Name":"Grey Suit",
+        "Description":"grey suit size-10",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.700"
+      },
+      {
+        "id": "6",
+        "Name":"Grey Suit",
+        "Description":"grey suit size-10",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.700"
+      },   {
+        "id": "7",
+        "Name":"Orange Top",
+        "Description":"Awesome Orange top size-9",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.800"
+      },   {
+        "id": "8",
+        "Name":"Grey Suit",
+        "Description":"grey suit size-10",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.700"
+      },   {
+        "id": "5",
+        "Name":"Grey Suit",
+        "Description":"grey suit size-10",
+        "img":"/assets/denim top.jpg",
+        "Amount":"ksh.700"
+      }
+    ]
+}
