@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsightsComponent implements OnInit {
 
-  constructor() { }
+  dataList:any =[];
+  tabIndex = 0;
+  tabText ='';
+  constructor(private httpClient:HttpClient) { }
 
   ngOnInit(): void {
+    this.httpClient.get('/assets/shopdata.json').subscribe((data) =>{
+      this.dataList = data;
+      console.log(this.dataList);
+    });
   }
 
 }
