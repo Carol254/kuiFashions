@@ -1,1 +1,5 @@
-<p>shopping-item works!</p>
+<div class="d-flex" >
+    <div *ngFor="let item of dataList; let i = index">
+        {{item.shoppingData.name}}
+    </div>
+</div>

@@ -32,7 +32,8 @@ const appRoutes:Routes =[
     ], 
   },
   {path:'dashboard/home/sign-up',component:SignUpComponent},
-  {path:'dashboard/home/sign-in',component:SignInComponent}
+  {path:'dashboard/home/sign-in',component:SignInComponent},
+  {path:'dashboard/shop/shopping-item',component:ShoppingItemComponent}
 
 ];
 

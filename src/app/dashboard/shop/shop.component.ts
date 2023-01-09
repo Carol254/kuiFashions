@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuData } from 'src/app/models/menus.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -22,10 +23,13 @@ export class ShopComponent implements OnInit {
     new MenuData('Beige Top','Awesome Beige top size-9','/assets/model_3.jpg'),
   ];
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
 
+  }
+  shoppingItem(){
+        this.router.navigate(['dashboard/shop/shopping-item']);
   }
 
 }
