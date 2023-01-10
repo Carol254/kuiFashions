@@ -28,7 +28,7 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  shoppingItem(){
+  onShoppingItem(){
         this.router.navigate(['dashboard/shop/shopping-item']);
   }
 
