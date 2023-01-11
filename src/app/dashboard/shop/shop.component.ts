@@ -12,7 +12,7 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class ShopComponent implements OnInit  {
 
-  product:ProductData =<ProductData>{
+  productsArr:ProductData[] = [{
     id: '',
     Name: '',
     Description:'',
@@ -21,6 +21,7 @@ export class ShopComponent implements OnInit  {
 
     isSelected:false,
   }
+]
 
   shoppingInfo:any;
   menus:MenuData[] =[
@@ -43,8 +44,9 @@ export class ShopComponent implements OnInit  {
   ngOnInit(): void {
 
     this.productService.getProductInfo().subscribe({
-      next:(resp:any) => {
-        console.log('productResp'+resp);
+      next:(resp:ProductData) => {
+      console.log(resp);
+      this.productsArr;
       },
       error:()=>{
 
