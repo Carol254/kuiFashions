@@ -16,7 +16,7 @@ import { ContactUsComponent } from './dashboard/contact-us/contact-us.component'
 import { HeaderComponent } from './dashboard/header/header.component';
 import { SignUpComponent } from './dashboard/sign-up/sign-up.component';
 import { SignInComponent } from './dashboard/sign-in/sign-in.component';
-import { ShoppingItemComponent } from './dashboard/shopping-item/shopping-item.component';
+import { ShoppingItemComponent } from './dashboard/shop/shopping-item/shopping-item.component';
 
 const appRoutes:Routes =[
   {path:'',redirectTo:'dashboard',pathMatch:'full'},

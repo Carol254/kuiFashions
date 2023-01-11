@@ -29,7 +29,7 @@ export class ShopComponent implements OnInit {
 
   }
   onShoppingItem(){
-        this.router.navigate(['dashboard/shop/shopping-item']);
+        this.router.navigate(["dashboard/shop/shopping-item"]);
   }
 
 }
