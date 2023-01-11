@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuData } from 'src/app/models/menus.model';
+import { ProductData } from 'src/app/models/product-detail.model';
 import { Router } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -9,7 +10,17 @@ import { CartService } from 'src/app/services/cart.service';
   templateUrl: './shop.component.html',
   styleUrls: ['./shop.component.css']
 })
-export class ShopComponent implements OnInit {
+export class ShopComponent implements OnInit  {
+
+  product:ProductData =<ProductData>{
+    id: '',
+    Name: '',
+    Description:'',
+    img:'',
+    Amount:'',
+
+    isSelected:false,
+  }
 
   shoppingInfo:any;
   menus:MenuData[] =[

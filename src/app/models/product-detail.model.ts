@@ -3,5 +3,7 @@ export interface ProductData{
     Name: string,
     Description: string,
     img:string,
-    Amount:string
+    Amount:string,
+
+    isSelected:boolean
 }
