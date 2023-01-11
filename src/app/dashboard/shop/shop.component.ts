@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuData } from 'src/app/models/menus.model';
 import { Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
+
 
 @Component({
   selector: 'app-shop',
@@ -8,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
+
+  shoppingInfo:any;
   menus:MenuData[] =[
     new MenuData('Ragged Jeans','Awesome ripped jeans size-10','/assets/ragged-jeans.jpg'),
     new MenuData('Black sweat top','Sweat top size-10','/assets/black sweat-top.jpg'),
@@ -23,9 +27,21 @@ export class ShopComponent implements OnInit {
     new MenuData('Beige Top','Awesome Beige top size-9','/assets/model_3.jpg'),
   ];
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private productService:CartService) { }
 
   ngOnInit(): void {
+
+    this.productService.getProductInfo().subscribe({
+      next:(resp:any) => {
+        console.log('productResp'+resp);
+      },
+      error:()=>{
+
+      },
+      complete:()=>{
+
+      }
+    });
 
   }
   onShoppingItem(){
