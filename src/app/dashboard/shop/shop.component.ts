@@ -12,7 +12,7 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class ShopComponent implements OnInit  {
 
-  productsArr:ProductData[] = [{
+  products:ProductData =<ProductData>{
     id: '',
     Name: '',
     Description:'',
@@ -21,9 +21,12 @@ export class ShopComponent implements OnInit  {
 
     isSelected:false,
   }
-]
+
+
 
   shoppingInfo:any;
+  
+
   menus:MenuData[] =[
     new MenuData('Ragged Jeans','Awesome ripped jeans size-10','/assets/ragged-jeans.jpg'),
     new MenuData('Black sweat top','Sweat top size-10','/assets/black sweat-top.jpg'),
@@ -46,7 +49,11 @@ export class ShopComponent implements OnInit  {
     this.productService.getProductInfo().subscribe({
       next:(resp:ProductData) => {
       console.log(resp);
-      this.productsArr;
+      
+      this.products.id = resp.id;
+      this.products.Name = resp.Name;
+      this.products.Description = resp.Description;
+      this.products.img = resp.img;
       },
       error:()=>{
 

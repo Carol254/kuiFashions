@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ProductData } from '../models/product-detail.model';
 import { HttpClient,HttpErrorResponse,HttpHeaders } from '@angular/common/http';
-import { tap } from 'rxjs';
+import { Observer, tap } from 'rxjs';
 
 
 @Injectable({
@@ -15,6 +15,9 @@ export class CartService {
     img:"",
     Amount:"",
   }
+
+  
+  userProductArr:ProductData[] =[];
 
   constructor(private http:HttpClient) { }
 
