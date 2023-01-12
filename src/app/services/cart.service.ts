@@ -9,11 +9,13 @@ import { Observer, tap } from 'rxjs';
 })
 export class CartService {
   selectedProduct:ProductData =<ProductData>{
-    id: "",
-    Name: "",
-    Description: "",
-    img:"",
-    Amount:"",
+    id:          "",
+    name:        "",
+    description: "",
+    img:         "",
+    amount:      "",
+
+    isSelected:false
   }
 
   
@@ -22,7 +24,7 @@ export class CartService {
   constructor(private http:HttpClient) { }
 
   getProductInfo(){
-    return this.http.get('../../assets/shopdata.json',{
+    return this.http.get('../../assets/from_server/products.json',{
       headers:new HttpHeaders({
         'accept':'application/json',
         'Content-Type':'application/json'
@@ -32,7 +34,7 @@ export class CartService {
       tap
       ({
         next:(resp: any)=>{
-            console.log(resp);
+          console.log('from service' + resp);
         },
         error:()=>{
 

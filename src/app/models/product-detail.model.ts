@@ -1,9 +1,9 @@
 export interface ProductData{
-    id: string,
-    Name: string,
-    Description: string,
+    id:string,
+    name: string,
+    description: string,
     img:string,
-    Amount:string,
+    amount:string,
 
     isSelected:boolean
 }

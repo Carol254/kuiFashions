@@ -78,10 +78,10 @@
     		</div>
     	</div>
 		<div class="btn" (click)="onShoppingItem()">Shop</div>
-		<div >
-			{{products.Name}}
-			{{products.Description}}
-			{{products.img}}
-			{{products.Amount}}
+		<div *ngFor="let product of products" >
+			{{product.name}}
+			{{product.description}}
+			{{product.img}}
+			{{product.amount}}
 		</div>
     </div>

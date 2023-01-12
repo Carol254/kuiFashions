@@ -12,18 +12,18 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class ShopComponent implements OnInit  {
 
-  products:ProductData =<ProductData>{
-    id: '',
-    Name: '',
-    Description:'',
-    img:'',
-    Amount:'',
-
-    isSelected:false,
-  }
-
-
-
+  products:ProductData[] = [{
+      id:          "",
+      name:        "",
+      description: "",
+      img:         "",
+      amount:      "",
+  
+      isSelected:false
+    }
+  ];
+    
+  
   shoppingInfo:any;
   
 
@@ -47,19 +47,45 @@ export class ShopComponent implements OnInit  {
   ngOnInit(): void {
 
     this.productService.getProductInfo().subscribe({
-      next:(resp:ProductData) => {
-      console.log(resp);
+      next:(product_resp:ProductData) => {
+
+      console.log(product_resp);
+
+      if(Array.isArray(product_resp)){
+        let index: number = 0;
+
+        for(let item of product_resp){
+          // let product: ProductData = {
+          //   id:          item['products.id'],
+          //   name:        item['products.name'],
+          //   description: item['products.description'],
+          //   img:         item['products.img'],
+          //   amount:      item['products.amount'],
+        
+          //   isSelected: false
+
+          // };
+
+          console.log('single'+item);
+
+          //this.products.push(product);
+          
+          index++;
+        }
+        
+
+     } else {
+      //invalid token
+
+     }
       
-      this.products.id = resp.id;
-      this.products.Name = resp.Name;
-      this.products.Description = resp.Description;
-      this.products.img = resp.img;
+      
       },
       error:()=>{
 
       },
       complete:()=>{
-
+        console.log('success-server' + this.products.length);
       }
     });
 
