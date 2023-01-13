@@ -8,8 +8,8 @@
     font-family: "Droid Serif", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    background-color: #efede6;
-    color: #2d2d2d;
+    background-color: #f992a6;
+    color: #000;
     margin: 0;
     padding: 0;
   }
@@ -39,7 +39,7 @@
     font-weight: 400;
     font-size: 2.3em;
     text-align: center;
-    color: #a55959;
+    color: #000;
     transition: font-size .5s ease;
   }
 
