@@ -77,6 +77,8 @@
     				</div>
     		</div>
     	</div>
+		<hr>
+		<p>New shopping list</p>
 		<div class="btn" (click)="onShoppingItem()">Shop</div>
 		<div *ngFor="let product of products" >
 			{{product.name}}
@@ -84,4 +86,5 @@
 			{{product.img}}
 			{{product.amount}}
 		</div>
+
     </div>
