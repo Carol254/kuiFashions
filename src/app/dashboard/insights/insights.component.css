@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Droid Serif", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #efede6;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+  }
+
+  section#testimonials {
+    overflow: visible;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  section#footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+  }
+  section#footer a, section#footer a:visited {
+    color: #4cb6c1;
+  }
+  section#footer a:hover, section#footer a:active {
+    color: #a55959;
+  }
+
+  h1 {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2.3em;
+    text-align: center;
+    color: #a55959;
+    transition: font-size .5s ease;
+  }
+
+  .col {
+    width: 100%;
+    border-bottom: 1px solid #a55959;
+    overflow: visible;
+    position: relative;
+    padding: 3em;
+  }
+
+  .col:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 5em;
+    /*color: rgba(72, 106, 140, .4);*/
+    color: rgba(76, 182, 193, .3);
+    z-index: -100;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  /*p:nth-last-child(2):after {
+    content: "\f10e";
+    font-family: FontAwesome;
+    font-size: 5em;
+    color: rgba(72, 106, 140, .4);
+    font-size: 5em;
+    z-index: -100;
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+  }*/
+
+  p, li {
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+  p.person {
+    text-align: right;
+    color: #4cb6c1;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  p.person:before {
+    content: "\f007";
+    font-family: FontAwesome;
+    color: #2d2d2d;
+    margin-right: .6em;
+  }
+
+  @media (min-width: 960px) {
+    
+     h1 {
+       font-size: 3em;
+     }
+    
+  }
+
+  @media (max-width: 450px) {
+
+    h1 {
+      font-size: 1.8em;
+      transition: font-size .5s ease;
+    }
+
+  }
