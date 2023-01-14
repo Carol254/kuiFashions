@@ -47,41 +47,13 @@ export class ShopComponent implements OnInit  {
   ngOnInit(): void {
 
     this.productService.getProductInfo().subscribe({
-      next:(product_resp:ProductData) => {
+      next:(products:ProductData) => {
 
-      console.log(product_resp);
-
-      if(Array.isArray(product_resp)){
-        let index: number = 0;
-
-        for(let item of product_resp){
-          // let product: ProductData = {
-          //   id:          item['products.id'],
-          //   name:        item['products.name'],
-          //   description: item['products.description'],
-          //   img:         item['products.img'],
-          //   amount:      item['products.amount'],
-        
-          //   isSelected: false
-
-          // };
-
-          console.log('single'+item);
-
-          //this.products.push(product);
-          
-          index++;
-        }
-        
-
-     } else {
-      //invalid token
-
-     }
-      
+      console.log(products);
+        return this.productService.items;
       
       },
-      error:()=>{
+      error:()=>{  
 
       },
       complete:()=>{

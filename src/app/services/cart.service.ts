@@ -8,18 +8,8 @@ import { Observer, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
-  selectedProduct:ProductData =<ProductData>{
-    id:          "",
-    name:        "",
-    description: "",
-    img:         "",
-    amount:      "",
 
-    isSelected:false
-  }
-
-  
-  userProductArr:ProductData[] =[];
+  items:ProductData[] =[];
 
   constructor(private http:HttpClient) { }
 
@@ -35,6 +25,7 @@ export class CartService {
       ({
         next:(resp: any)=>{
           console.log('from service' + resp);
+          return this.items;
         },
         error:()=>{
 
