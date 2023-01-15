@@ -50,7 +50,7 @@ export class ShopComponent implements OnInit  {
       next:(products:ProductData) => {
 
       console.log(products);
-        return this.productService.items;
+        this.products
       
       },
       error:()=>{  
