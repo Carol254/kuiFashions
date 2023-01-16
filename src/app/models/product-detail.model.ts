@@ -5,5 +5,5 @@ export interface ProductData{
     img:string,
     amount:string,
 
-    isSelected:boolean
+    
 }

@@ -9,7 +9,7 @@ import { Observer, tap } from 'rxjs';
 })
 export class CartService {
 
-  items:ProductData[] =[];
+  
 
   constructor(private http:HttpClient) { }
 
@@ -25,7 +25,7 @@ export class CartService {
       ({
         next:(resp: any)=>{
           console.log('from service' + resp);
-          return this.items;
+        
         },
         error:()=>{
 

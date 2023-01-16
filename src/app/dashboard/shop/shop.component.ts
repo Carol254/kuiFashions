@@ -11,17 +11,16 @@ import { CartService } from 'src/app/services/cart.service';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit  {
+  productArr: {
+    id:string;
+    name:string;
+    description:string;
+    img:string;
+    amount:string;
+  }[] =[];
 
-  products:ProductData[] = [{
-      id:          "",
-      name:        "",
-      description: "",
-      img:         "",
-      amount:      "",
-  
-      isSelected:false
-    }
-  ];
+
+  products:ProductData[] = [];
     
   
   shoppingInfo:any;
@@ -47,11 +46,30 @@ export class ShopComponent implements OnInit  {
   ngOnInit(): void {
 
     this.productService.getProductInfo().subscribe({
-      next:(products:ProductData) => {
+      next:(resp) => {
 
-      console.log(products);
-        this.products
-      
+      console.log(resp);
+      if (Array.isArray(resp)){
+        let index:number = 0;
+        for (let item of resp){
+          if (item['name']==null){
+            item['name']='';
+          }
+
+          let product:ProductData={
+            id:item['id'],
+            name:item ['name'],
+            description:item['description'],
+            img:item ['img'],
+            amount:item['amount'],
+          };
+          this.products.push(product);
+
+          index++;
+        }   
+    }
+    this.productArr = this.products;
+    console.log(this.productArr);
       },
       error:()=>{  
 
