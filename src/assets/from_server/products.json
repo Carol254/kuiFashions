@@ -1,5 +1,5 @@
-{
-    "products": [
+
+    [
       {
         "id": "1",
         "name": "Ragged Jeans",
@@ -91,4 +91,3 @@
         "amount":"ksh.400"
       }
     ]
-}

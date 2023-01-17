@@ -3,6 +3,7 @@ import { MenuData } from 'src/app/models/menus.model';
 import { ProductData } from 'src/app/models/product-detail.model';
 import { Router } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class ShopComponent implements OnInit  {
   }[] =[];
 
 
-  products:ProductData[] = [];
+  products:any= [];
     
   
   shoppingInfo:any;
@@ -41,44 +42,15 @@ export class ShopComponent implements OnInit  {
     new MenuData('Beige Top','Awesome Beige top size-9','/assets/model_3.jpg'),
   ];
 
-  constructor(private router:Router, private productService:CartService) { }
+  constructor(private router:Router, private httpClient:HttpClient) { }
 
-  ngOnInit(): void {
-
-    this.productService.getProductInfo().subscribe({
-      next:(resp) => {
-
-      console.log(resp);
-      if (Array.isArray(resp)){
-        let index:number = 0;
-        for (let item of resp){
-          if (item['name']==null){
-            item['name']='';
-          }
-
-          let product:ProductData={
-            id:item['id'],
-            name:item ['name'],
-            description:item['description'],
-            img:item ['img'],
-            amount:item['amount'],
-          };
-          this.products.push(product);
-
-          index++;
-        }   
-    }
-    this.productArr = this.products;
-    console.log(this.productArr);
-      },
-      error:()=>{  
-
-      },
-      complete:()=>{
-        console.log('success-server' + this.products.length);
-      }
-    });
-
+  ngOnInit(){
+    this.httpClient.get("/assets/from_server/products.json").subscribe
+    (data=>{
+      console.log(data);
+      this.products = data;
+    }) 
+   
   }
   onShoppingItem(){
         this.router.navigate(["dashboard/shop/shopping-item"]);
