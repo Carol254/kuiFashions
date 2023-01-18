@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ProductData } from '../models/product-detail.model';
 import { HttpClient,HttpErrorResponse,HttpHeaders } from '@angular/common/http';
-import { Observer, tap } from 'rxjs';
+import { Observer, tap, Observable } from 'rxjs';
 
 
 @Injectable({
@@ -13,8 +13,8 @@ export class CartService {
 
   constructor(private http:HttpClient) { }
 
-  getProductInfo(){
-    return this.http.get('../../assets/from_server/products.json',{
+  getProductInfo():Observable<ProductData[]>{
+    return this.http.get<ProductData[]>('../../assets/from_server/products.json',{
       headers:new HttpHeaders({
         'accept':'application/json',
         'Content-Type':'application/json'
