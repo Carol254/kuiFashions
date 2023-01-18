@@ -1,5 +1,5 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -9,17 +9,17 @@ import { NgForm } from '@angular/forms';
 
 
 export class SignUpComponent implements OnInit {
-  genders=['male','female'];
+
 
   constructor() { 
-  
+ 
   }
 
   ngOnInit(): void {
    
   }
 
-  onSubmit(f:NgForm){
-    console.log(f);
+  onSubmit(){
+    console.log();
   }
 }
