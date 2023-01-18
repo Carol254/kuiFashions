@@ -4,6 +4,4 @@ export interface ProductData{
     description: string,
     img:string,
     amount:string,
-
-    
 }

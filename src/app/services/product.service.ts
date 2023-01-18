@@ -7,9 +7,10 @@ import { Observer, tap, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CartService {
+export class ProductService {
 
   
+items:ProductData[]=[];
 
   constructor(private http:HttpClient) { }
 
@@ -33,4 +34,10 @@ export class CartService {
       })
     );
   }
+
+  addToCart(product:ProductData){
+    this.items.push(product);
+  }
+
+
 }
