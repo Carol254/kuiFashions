@@ -31,6 +31,7 @@
 .carousel-caption {
 	text-align: left;
 	left: 5%;
+
 }
 
 .login-sec {
@@ -77,6 +78,7 @@
 	background: #DE6262;
 	color: #fff;
 	font-weight: 600;
+	margin-left: 10px;
 }
 
 .banner-text {
@@ -87,7 +89,7 @@
 }
 
 .banner-text h2 {
-	color: #fff;
+	color: #000;
 	font-weight: 600;
 }
 
@@ -95,13 +97,13 @@
 	content: " ";
 	width: 100px;
 	height: 5px;
-	background: #FFF;
+	background: #000;
 	display: block;
 	margin-top: 20px;
 	border-radius: 3px;
 }
 
 .banner-text p {
-	color: #fff;
+	color: #000;
 }
 
