@@ -3,91 +3,85 @@
       {
         "id": "1",
         "name": "Ragged Jeans",
-        "description": "Awesome ripped jeans size-10",
+        "description": "Awesome ripped jeans",
         "img":"/assets/ragged-jeans.jpg",
         "amount":"ksh.500"
       },
       {
         "id": "2",
         "name": "Black sweat top",
-        "description": "Sweat top size-10",
+        "description": "Sweat top ",
         "img":"/assets/black sweat-top.jpg",
         "amount":"ksh.600"
       },
       {
         "id": "3",
         "name":"Black & White dress",
-        "description":"Awesome dress size-8",
+        "description":"Awesome dress",
         "img":"assets/black&white dress.jpg",
         "amount":"ksh.400"
       },
       {
-        "id": "4",
+        "id": "12",
         "name": "Denim Top",
-        "description": "Awesome denim top size-10",
+        "description": "Awesome denim top",
         "img":"/assets/denim top.jpg",
         "amount":"ksh.400"
       },
       {
-        "id": "5",
-        "name":"Grey Suit",
-        "description":"grey suit size-10",
-        "img":"/assets/denim top.jpg",
-        "amount":"ksh.700"
-      },
-      {
         "id": "6",
         "name":"Grey Suit",
-        "description":"grey suit size-10",
+        "description":"grey suit",
         "img":"/assets/grey suit.jpg",
         "amount":"ksh.700"
       },   
       {
         "id": "7",
         "name":"Orange Top",
-        "description":"Awesome Orange top size-9",
+        "description":"Awesome Orange top",
         "img":"/assets/orange top.jpg",
         "amount":"ksh.900"
       },   
       {
         "id": "8",
         "name":"Polka Top",
-        "description":"Awesome Polka top size-12",
+        "description":"Awesome Polka top",
         "img":"/assets/polka-dot top.jpg",
         "amount":"ksh.700"
       },   
       {
         "id": "9",
         "name":"Pink Blazer",
-        "description":"Awesome Pink Blazer size-9",
+        "description":"Awesome Pink Blazer",
         "img":"/assets/pink blazer.jpg",
         "amount":"ksh.800"
       },{
         "id":"10",
         "name":"Pink Top",
-        "description":"Awesome Pink top size-9",
+        "description":"Awesome Pink top",
         "img":"/assets/pink-top.jpg",
         "Amount":"ksh.500"
       },
       {
         "id":"10",
         "name":"Stripped Top",
-        "description":"Awesome Stripped top size-9",
+        "description":"Awesome Stripped top",
         "img":"/assets/stripped-top.jpg",
         "amount":"ksh.500"
       },
       {
         "id":"11",
         "name":"Beige Top",
-        "description":"Awesome Beige top size-9",
+        "description":"Awesome Beige top",
         "img":"/assets/model_3.jpg",
         "amount":"ksh.750"
       },
       {
-        "id": "12",
-        "name": "Denim Top",
-        "description": "Awesome denim top size-10",
-        "img":"/assets/denim top.jpg",
-        "amount":"ksh.400"
+        "id":"11",
+        "name":"Red Dress",
+        "description":"Awesome Red Maxi Dress",
+        "img":"/assets/red-dress.jpg",
+        "amount":"ksh.950"
       }
+    
     ]
