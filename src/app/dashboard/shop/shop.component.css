@@ -170,19 +170,6 @@ body{
 	font-weight: 500;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .voutchers{
 	background-color: #fff;
 	border:none;
@@ -190,19 +177,16 @@ body{
 	width: 190px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
-
 }
 .voutcher-divider{
-
 	display: flex;
-
 }
 .voutcher-left{
 	width: 60%
 }
 .voutcher-name{
-	color: grey;
-	font-size: 9px;
+	color: #000;
+	font-size: 10px;
 	font-weight: 500;
 }
 .voutcher-code{
