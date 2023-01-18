@@ -18,11 +18,6 @@ export class ShopComponent implements OnInit  {
   constructor(private router:Router, private httpClient:HttpClient,private cartService:CartService) { }
 
   ngOnInit(){
-    // this.httpClient.get("/assets/from_server/products.json").subscribe
-    // (data=>{
-    //   console.log(data);
-    //   this.products = data;
-    // }) 
 
     this.cartService.getProductInfo().subscribe(data =>this.products =data);
 
