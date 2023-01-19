@@ -32,4 +32,7 @@ export class ShoppingCartComponent implements OnInit {
   onShop(){
     this.router.navigate(['dashboard/shop']);
   }
+  onCheckOut(){
+    
+  }
 }

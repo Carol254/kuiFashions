@@ -20,18 +20,24 @@
                             <td>{{i+1}}</td>
                             <td>{{item.name}}</td>
                             <td>{{item.description}}</td>
-                            <td><img src="{{item.img}}"></td>
-                            <td>{{item.amount}}</td>
-                            <td>{{item.quantity}}</td>
-                            <td>{{item.total}}</td>
+                            <td style="width:120px;"><img src="{{item.img}}" alt=""></td>
+                            <td style="width:25%;">{{item.amount}}</td>
+                            <td style="width:25%;">{{item.quantity}}</td>
+                            <td style="width:25%;">{{item.total}}</td>
                             <td>
                                 <button class="btn"(click)="removeItem(item)"><img src="/assets/trash-can.svg"></button>
                             </td>
                         </tr>
-                      
+                      <tr>
+                            <td colspan="4"></td>
+                            <td><button class="btn btn-danger"(click)="emptyCart()">Clear Cart</button></td>
+                            <td><button class="btn btn-primary"(click)="onShop()">Shop More</button></td>
+                            <td><button class="btn btn-success"(click)="onCheckOut()">Check Out</button></td>
+                            <td><strong>Grand Total:{{grandTotal}}</strong></td>
+                      </tr>
                     </tbody>
                 </table>
-                <button class="btn btn-danger"(click)="emptyCart()">Clear Cart</button>
+  
             </div>
         </div>
     </div>
