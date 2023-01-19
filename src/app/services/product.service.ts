@@ -66,6 +66,7 @@ public productList = new BehaviorSubject<any>([]);
         this.items.splice(index,1);
       }
     })
+    this.productList.next(this.items);
   }
 
   removeAllCartItems(){

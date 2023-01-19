@@ -1,6 +1,7 @@
 import { ProductData } from 'src/app/models/product-detail.model';
 import { ProductService } from './../../services/product.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -12,7 +13,7 @@ export class ShoppingCartComponent implements OnInit {
   productList:ProductData[]=[];
   grandTotal:number = 0;
 
-  constructor(private productService:ProductService) { }
+  constructor(private productService:ProductService,private router:Router) { }
 
   ngOnInit() {
     this.productService.getProducts().subscribe(resp=>{
@@ -27,5 +28,8 @@ export class ShoppingCartComponent implements OnInit {
 
   emptyCart(){
     this.productService.removeAllCartItems();
+  }
+  onShop(){
+    this.router.navigate(['dashboard/shop']);
   }
 }
