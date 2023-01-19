@@ -1,1 +1,54 @@
-<p>shopping-cart works!</p>
+<ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="card-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Serial No.</th>
+                            <th>Product Name</th>
+                            <th>Product Description</th>
+                            <th>Product Image</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Red Dress</td>
+                            <td>This is a red dress</td>
+                            <td>Some Img</td>
+                            <td>2000</td>
+                            <td>1</td>
+                            <td>2000</td>
+                            <td>
+                                <button class="btn"><img src="\assets\trash-can.svg"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+
+
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="\assets\shopping-cart.jpg" alt="">
+            <h4>Your Card is Empty</h4>
+            <h6>Add items to it now</h6>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
+

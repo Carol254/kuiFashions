@@ -1,25 +1,48 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { ProductData } from '../models/product-detail.model';
 
 @Injectable()
 export class ShoppingCartService {
 
-
-  items:ProductData[] =[];
+public cartItemList:ProductData[] =[];
+public productList = new BehaviorSubject<any>([]);
+  
   constructor(private http: HttpClient) { }
   
-  addToCart(product:ProductData){
-    this.items.push(product);
+  getProducts(){
+  return  this.productList.asObservable();
+  }
+  setProduct(product:any){
+    this.cartItemList.push(...product);
+    this.productList.next(product);
   }
 
-  getItems(){
-    return this.items;
+  addtoCart(product:any){
+    this.cartItemList.push(product);
+    this.productList.next(this.cartItemList);
+    this.getTotalPrice();
   }
 
-  clearCart(){
-    this.items =[];
-    return this.items;
+  getTotalPrice(){
+    let grandTotal =0;
+    this.cartItemList.map((a:any)=>{
+      grandTotal +=a.total;
+    })
   }
+
+  removeCartItem(product:any){
+    this.cartItemList.map((a:any,index:any)=>{
+      if (product.id ===a.id){
+        this.cartItemList.splice(index,1);
+      }
+    })
+  }
+  removeAllCrtItems(){
+    this.cartItemList =[];
+    this.productList.next(this.cartItemList);
+  }
+
+
 }

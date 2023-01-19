@@ -30,6 +30,10 @@ export class ShopComponent implements OnInit  {
         this.router.navigate(["dashboard/shop/shopping-item"]);
   }
 
+  addtoCart(){
+    
+  }
+
  
 
 }

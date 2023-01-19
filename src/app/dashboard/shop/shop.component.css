@@ -5,13 +5,11 @@ body{
 	background-color: #fff;
 	border:none;
 	border-radius: 10px;
-	width: 190px;
+	width: 210px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card:hover{
-	transform: scale(1.1);
-}
+
 .image-container{
 	position: relative;
 }
@@ -167,6 +165,17 @@ body{
 	color: grey;
 
 }
+button{
+	outline: none;
+	border: none;
+	background-color: purple;
+	color: #fff;
+	border-radius:5px ;
+
+}
+.add-cart{
+	text-align: center;
+}
 .buy{
 	font-size: 12px;
 	color: purple;
@@ -177,7 +186,7 @@ body{
 	background-color: #fff;
 	border:none;
 	border-radius: 10px;
-	width: 190px;
+	width: 210px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 }
