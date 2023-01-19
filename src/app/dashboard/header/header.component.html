@@ -35,7 +35,9 @@
           </li>
         </ul>
         <div class="d-flex">
-          <img  class="cart" src="/assets/cart4.svg">
+          <div class="cart" routerLink="dashboard/cart"><img src="\assets\the-cart.svg">
+            <div style="font-size: 15px;" class="badge bg-danger">{{totalItems}}</div>
+          </div>
           <div class="btn px-3"(click)="onSignIn()">Sign In</div>
           <div class="btn"(click)="onSignUp()">Sign Up</div>
         </div>

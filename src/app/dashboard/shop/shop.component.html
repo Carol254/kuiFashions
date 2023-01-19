@@ -1,17 +1,4 @@
-<!-- <div class="item col-xs-4 col-md-3">
-        <a href="#" 
-        class="list-group-item clearfix"
-        *ngFor="let menu of menus">
-         <div class="pull-left">
-            <h4>{{menu.name}}</h4>
-            <h4>{{menu.description}}</h4>
-         </div>
-         <div class="pull-right">
-            <img src="{{menu.imagePath}}" alt="{{menu.name}}" class="img-responsive">
-         </div>
-        </a>
-    </div> -->
-    <div class="container mt-5">
+<div class="container mt-5">
     	<div class="row">
     		<div class="col-md-3" *ngFor="let product of products">
     				<div class="card mb-1 mt-4" >
@@ -32,42 +19,23 @@
     									
     								</div>
     							</div>
-    							<!-- <div class="d-flex justify-content-between align-items-center pt-1">
-    								<div class="color-select d-flex ">
-    									<input type="button" name="grey" class="btn creme">
-    									<input type="button" name="red" class="btn red ml-2">
-    									<input type="button" name="blue" class="btn blue ml-2">
-    								</div>
-    								<div class="d-flex ">
-    						        	<span class="item-size mr-2 btn" type="button">S</span>
-    									<span class="item-size mr-2 btn" type="button">M</span>
-    									<span class="item-size btn" type="button">L</span>
-    								</div>
-    							</div> -->
-    							
-    								
-    								<button class="add-cart">ADD TO CART</button>	
-    							
+    								<div class="add-cart pb-2">
+										<button (click)="addtoCart(product)">ADD TO CART</button>
+									</div>
     					</div>
     				</div>
 
     				<div class="mt-2 mb-2">
     					<div class="card voutchers" >
-
     						<div class="voutcher-divider">
-
     							<div class="voutcher-left text-center">
-    								<span class="voutcher-name">{{product.description}}</span>
-    								
+    								<span class="voutcher-name">{{product.description}}</span>	
     							</div>
     							<div class="voutcher-right text-center border-left">
     								<h5 class="discount-percent">20%</h5>
-    								<span class="off">Off</span>
-    								
-    							</div>
-    								
+    								<span class="off">Off</span>	
+    							</div>	
     						</div>
-    						
     					</div>
     					
     				</div>

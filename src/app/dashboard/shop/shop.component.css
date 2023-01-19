@@ -174,7 +174,9 @@ button{
 
 }
 .add-cart{
-	text-align: center;
+	display: flex;
+	justify-content:end;
+	
 }
 .buy{
 	font-size: 12px;

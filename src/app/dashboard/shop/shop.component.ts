@@ -1,4 +1,4 @@
-import { ShoppingCartService } from './../../services/shopping-cart.service';
+import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 import { Component, OnInit } from '@angular/core';
 import { MenuData } from 'src/app/models/menus.model';
 import { ProductData} from 'src/app/models/product-detail.model';
@@ -16,22 +16,26 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ShopComponent implements OnInit  {
 
-  products:any= [];
+  products:ProductData[]= [];
   
-  constructor(private router:Router, private httpClient:HttpClient,private productService:ProductService) { }
+  constructor(private router:Router,private productService:ProductService) { }
 
   ngOnInit(){
 
-    this.productService.getProductInfo().subscribe(data =>this.products =data);
-
-   
+    this.productService.getProductInfo().subscribe(data =>{
+      this.products = data;
+    
+      this.products.forEach((a:ProductData)=>{
+        Object.assign(a,{quantity:1,total:a.amount});
+      });
+    })
   }
   onShoppingItem(){
         this.router.navigate(["dashboard/shop/shopping-item"]);
   }
 
-  addtoCart(){
-    
+  addtoCart(product:any){
+    this.productService.addtoCart(product);
   }
 
  
