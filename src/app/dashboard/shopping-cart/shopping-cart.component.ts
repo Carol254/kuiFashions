@@ -1,3 +1,5 @@
+import { ProductData } from 'src/app/models/product-detail.model';
+import { ProductService } from './../../services/product.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
 
-  constructor() { }
+  productList:ProductData[]=[];
+  grandTotal:number = 0;
 
-  ngOnInit(): void {
+  constructor(private productService:ProductService) { }
+
+  ngOnInit() {
+    this.productService.getProducts().subscribe(resp=>{
+      this.productList = resp;
+      this.grandTotal = this.productService.getTotalPrice();
+    });
   }
 
+  removeItem(item:any){
+    this.productService.removeCartItem(item);
+  }
+
+  emptyCart(){
+    this.productService.removeAllCartItems();
+  }
 }

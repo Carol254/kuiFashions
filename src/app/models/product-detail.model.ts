@@ -3,5 +3,7 @@ export interface ProductData{
     name: string,
     description: string,
     img:string,
-    amount:string,
+    amount:number,
+    quantity:number,
+    total:number
 }

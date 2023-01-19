@@ -52,11 +52,12 @@ public productList = new BehaviorSubject<any>([]);
     console.log(this.items);
   }
 
-  getTotalPrice(){
+  getTotalPrice():number{
     let grandTotal =0;
     this.items.map((a:any)=>{
       grandTotal +=a.total;
-    })
+    });
+  return grandTotal;
   }
 
   removeCartItem(product:any){
