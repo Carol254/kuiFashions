@@ -13,6 +13,7 @@ export class ShoppingCartComponent implements OnInit {
   productList:ProductData[]=[];
   grandTotal:number = 0;
 
+
   constructor(private productService:ProductService,private router:Router) { }
 
   ngOnInit() {
@@ -36,11 +37,33 @@ export class ShoppingCartComponent implements OnInit {
   calcGrandTotal():number{
     let total:number = 0;
     for (let product of this.productList){
-      total += (product.quantity * product.amount);
+      total += (product.qty * product.amount);
     }
     return total;
   }
-  onCheckOut(){
-    
-  }
+
+   addQty(productId:string):void{
+    this.productList = this.productList.map((product:ProductData)=>{
+      if (product.id === productId){
+        return {
+          ...product,
+          qty : product.qty +1
+        }
+      
+      }
+      return product;
+    })
+   } 
+
+   reduceQty(productId:string):void{
+    this.productList = this.productList.map ((product:ProductData)=>{
+      if (product.id === productId){
+        return {
+          ...product,
+          qty: product.qty -1
+        }
+      }
+      return product;
+    })
+   }
 }
