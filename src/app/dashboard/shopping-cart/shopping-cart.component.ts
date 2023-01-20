@@ -18,7 +18,7 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit() {
     this.productService.getProducts().subscribe(resp=>{
       this.productList = resp;
-      this.grandTotal = this.productService.getTotalPrice();
+      // this.grandTotal = this.productService.getTotalPrice();
     });
   }
 
@@ -29,8 +29,17 @@ export class ShoppingCartComponent implements OnInit {
   emptyCart(){
     this.productService.removeAllCartItems();
   }
+
   onShop(){
     this.router.navigate(['dashboard/shop']);
+  }
+
+  calcGrandTotal():number{
+    let total:number = 0;
+    for (let product of this.productList){
+      total += (product.quantity * product.amount);
+    }
+    return total;
   }
   onCheckOut(){
     

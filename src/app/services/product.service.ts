@@ -53,7 +53,7 @@ public productList = new BehaviorSubject<any>([]);
   }
 
   getTotalPrice():number{
-    let grandTotal =0;
+    let grandTotal = 0;
     this.items.map((a:any)=>{
       grandTotal +=a.total;
     });
