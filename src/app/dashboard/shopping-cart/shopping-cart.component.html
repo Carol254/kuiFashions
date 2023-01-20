@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <ng-container *ngIf="productList.length != 0">
     <div class="container">
         <div class="card-table">
@@ -22,7 +23,7 @@
                             <td>{{item.description}}</td>
                             <td style="width:120px;"><img src="{{item.img}}" alt=""></td>
                             <td style="width:25%;">{{item.amount}}</td>
-                            <td style="width:25%;">{{item.quantity}}</td>
+                            <td style="width:25%;"><i class="bi bi-dash-square-fill"></i>{{item.quantity}}<i class="bi bi-plus-square-fill"></i></td>
                             <td style="width:25%;">{{item.total}}</td>
                             <td>
                                 <button class="btn"(click)="removeItem(item)"><img src="/assets/trash-can.svg"></button>
@@ -32,7 +33,6 @@
                             <td colspan="4"></td>
                             <td><button class="btn btn-danger"(click)="emptyCart()">Clear Cart</button></td>
                             <td><button class="btn btn-primary"(click)="onShop()">Shop More</button></td>
-                            <td><button class="btn btn-success"(click)="onCheckOut()">Check Out</button></td>
                             <td><strong>{{calcGrandTotal()}}</strong></td>
                       </tr>
                     </tbody>
