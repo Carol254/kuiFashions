@@ -34,7 +34,7 @@
                             <td><button class="btn btn-danger"(click)="emptyCart()">Clear Cart</button></td>
                             <td><button class="btn btn-primary"(click)="onShop()">Shop More</button></td>
                             <td><strong>{{calcGrandTotal()}}</strong></td>
-                            <td><button class="btn btn-success">CheckOut</button></td>
+                            <td><button (click)="signIn()" class="btn btn-success">CheckOut</button></td>
                       </tr>
                     </tbody>
                 </table>

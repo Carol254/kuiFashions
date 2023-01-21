@@ -66,4 +66,8 @@ export class ShoppingCartComponent implements OnInit {
       return product;
     })
    }
+
+   signIn(){
+    this.router.navigate(['dashboard/home/sign-in']);
+   }
 }
