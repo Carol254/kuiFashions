@@ -106,3 +106,11 @@
 .banner-text p {
 	color: #000;
 }
+.new-user{
+	cursor:pointer;
+	margin-top:35px;
+	color:#DE6262 ;
+}
+.new-user:hover{
+	color: #000;
+}
