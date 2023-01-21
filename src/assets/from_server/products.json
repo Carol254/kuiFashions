@@ -25,7 +25,7 @@
         "qty":1
       },
       {
-        "id": "12",
+        "id": "4",
         "name": "Denim Top",
         "description": "Awesome denim top",
         "img":"/assets/denim top.jpg",
@@ -33,7 +33,7 @@
         "qty":1
       },
       {
-        "id": "6",
+        "id": "5",
         "name":"Grey Suit",
         "description":"grey suit",
         "img":"/assets/grey suit.jpg",
@@ -41,7 +41,7 @@
         "qty":1
       },   
       {
-        "id": "7",
+        "id": "6",
         "name":"Orange Top",
         "description":"Awesome Orange top",
         "img":"/assets/orange top.jpg",
@@ -49,7 +49,7 @@
         "qty":1
       },   
       {
-        "id": "8",
+        "id": "7",
         "name":"Polka Top",
         "description":"Awesome Polka top",
         "img":"/assets/polka-dot top.jpg",
@@ -57,14 +57,14 @@
         "qty":1
       },   
       {
-        "id": "9",
+        "id": "8",
         "name":"Pink Blazer",
         "description":"Awesome Pink Blazer",
         "img":"/assets/pink blazer.jpg",
         "amount":800,
         "qty":1
       },{
-        "id":"10",
+        "id":"9",
         "name":"Pink Top",
         "description":"Awesome Pink top",
         "img":"/assets/pink-top.jpg",
@@ -88,7 +88,7 @@
         "qty":1
       },
       {
-        "id":"11",
+        "id":"12",
         "name":"Red Dress",
         "description":"Awesome Red Maxi Dress",
         "img":"/assets/red-dress.jpg",

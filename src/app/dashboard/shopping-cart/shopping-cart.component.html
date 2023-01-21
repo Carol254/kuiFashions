@@ -22,9 +22,9 @@
                             <td>{{item.name}}</td>
                             <td>{{item.description}}</td>
                             <td style="width:120px;"><img src="{{item.img}}" alt=""></td>
-                            <td style="width:25%;">{{item.amount}}</td>
+                            <td style="width:25%;">Ksh.{{item.amount}}</td>
                             <td style="width:25%;"><i (click)="reduceQty(item.id)" class="bi bi-dash-square-fill"></i>{{item.qty}}<i (click)="addQty(item.id)" class="bi bi-plus-square-fill"></i></td>
-                            <td style="width:25%;">{{item.total}}</td>
+                            <td style="width:25%;">Ksh.{{item.total}}</td>
                             <td>
                                 <button class="btn"(click)="removeItem(item)"><img src="/assets/trash-can.svg"></button>
                             </td>

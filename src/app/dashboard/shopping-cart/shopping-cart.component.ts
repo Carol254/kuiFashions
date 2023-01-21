@@ -34,6 +34,7 @@ export class ShoppingCartComponent implements OnInit {
     this.router.navigate(['dashboard/shop']);
   }
 
+  
   calcGrandTotal():number{
     let total:number = 0;
     for (let product of this.productList){
