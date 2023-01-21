@@ -1,0 +1,37 @@
+[
+{
+    "id": 1,
+    "username": "Sebastian",
+    "password": "foobar"
+},
+{
+    "id": 2,
+    "username": "Steve",
+    "password":"foobar"
+},
+{
+    "id": 3,
+    "username": "Ann",
+    "password":"foobar"
+},
+{
+    "id": 4,
+    "username": "Carol",
+    "password":"foobar"
+},
+{
+    "id": 5,
+    "username": "Jason",
+    "password":"foobar"
+},
+{
+    "id": 6,
+    "username": "Sanjay",
+    "password":"foobar"
+},
+{
+    "id": 7,
+    "username": "Craig",
+    "password":"foobar"
+}
+]
