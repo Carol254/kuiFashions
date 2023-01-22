@@ -17,6 +17,7 @@ import { SignUpComponent } from './dashboard/sign-up/sign-up.component';
 import { SignInComponent } from './dashboard/sign-in/sign-in.component';
 import { ShoppingItemComponent } from './dashboard/shop/shopping-item/shopping-item.component';
 import { ShoppingCartComponent } from './dashboard/shopping-cart/shopping-cart.component';
+import { FilterProductsPipe } from './pipes/filter-products.pipe';
 
 const appRoutes:Routes =[
   {path:'',redirectTo:'dashboard',pathMatch:'full'},
@@ -51,7 +52,8 @@ const appRoutes:Routes =[
     SignUpComponent,
     SignInComponent,
     ShoppingItemComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    FilterProductsPipe
   ],
   imports: [
     HttpClientModule,
