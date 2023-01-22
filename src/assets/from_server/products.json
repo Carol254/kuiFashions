@@ -6,6 +6,7 @@
         "description": "Awesome ripped jeans",
         "img":"/assets/ragged-jeans.jpg",
         "amount":500,
+        "category":"jeans",
         "qty":1
       },
       {
@@ -14,6 +15,7 @@
         "description": "Sweat top ",
         "img":"/assets/black sweat-top.jpg",
         "amount":600,
+        "category":"tops",
         "qty":1
       },
       {
@@ -22,6 +24,7 @@
         "description":"Awesome dress",
         "img":"assets/black&white dress.jpg",
         "amount":600,
+        "category":"dresses",
         "qty":1
       },
       {
@@ -30,6 +33,7 @@
         "description": "Awesome denim top",
         "img":"/assets/denim top.jpg",
         "amount":400,
+        "category":"tops",
         "qty":1
       },
       {
@@ -38,6 +42,7 @@
         "description":"grey suit",
         "img":"/assets/grey suit.jpg",
         "amount":700,
+        "category":"suits",
         "qty":1
       },   
       {
@@ -46,6 +51,7 @@
         "description":"Awesome Orange top",
         "img":"/assets/orange top.jpg",
         "amount":900,
+        "category":"tops",
         "qty":1
       },   
       {
@@ -54,6 +60,7 @@
         "description":"Awesome Polka top",
         "img":"/assets/polka-dot top.jpg",
         "amount":700,
+        "category":"tops",
         "qty":1
       },   
       {
@@ -62,6 +69,7 @@
         "description":"Awesome Pink Blazer",
         "img":"/assets/pink blazer.jpg",
         "amount":800,
+        "category":"blazers",
         "qty":1
       },{
         "id":"9",
@@ -69,6 +77,7 @@
         "description":"Awesome Pink top",
         "img":"/assets/pink-top.jpg",
         "Amount":500,
+        "category":"tops",
         "qty":1
       },
       {
@@ -77,6 +86,7 @@
         "description":"Awesome Stripped top",
         "img":"/assets/stripped-top.jpg",
         "amount":500,
+        "category":"tops",
         "qty":1
       },
       {
@@ -85,6 +95,7 @@
         "description":"Awesome Beige top",
         "img":"/assets/model_3.jpg",
         "amount":750,
+        "category":"tops",
         "qty":1
       },
       {
@@ -93,6 +104,7 @@
         "description":"Awesome Red Maxi Dress",
         "img":"/assets/red-dress.jpg",
         "amount":950,
+        "category":"dresses",
         "qty":1
       }
     
