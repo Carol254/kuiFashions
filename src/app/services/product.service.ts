@@ -13,6 +13,7 @@ export class ProductService {
   
 items:ProductData[]=[];
 public productList = new BehaviorSubject<any>([]);
+public search = new BehaviorSubject<string>("");
 
   constructor(private http:HttpClient) { }
 
