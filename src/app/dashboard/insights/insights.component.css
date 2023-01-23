@@ -16,6 +16,9 @@
     background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
     background: linear-gradient(to bottom, #FFB88C, #DE6262);
   }
+  .testimonial-container{
+    padding-top:50px;
+  }
 
   section#testimonials {
     overflow: visible;
@@ -26,6 +29,24 @@
     border-radius: 10px;
     box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
    
+  }
+  section#testimonials h1{
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #DE6262;
+  }
+
+  section#testimonials h1:after{
+    content: " ";
+    width: 200px;
+    height: 5px;
+    background: #FEB58A;
+    display: block;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto
   }
 
   section#footer {
@@ -88,7 +109,7 @@
   }
   p.person {
     text-align: right;
-    color: #4cb6c1;
+    color: #DE6262;
     font-weight: 700;
     font-size: 1.5em;
   }
