@@ -8,10 +8,13 @@
     font-family: "Droid Serif", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    background-color: #f992a6;
+    background-color: #fff;
     color: #000;
     margin: 0;
     padding: 0;
+    background: #DE6262;
+    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
+    background: linear-gradient(to bottom, #FFB88C, #DE6262);
   }
 
   section#testimonials {
@@ -19,6 +22,10 @@
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+   
   }
 
   section#footer {
