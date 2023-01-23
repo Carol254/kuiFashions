@@ -2,15 +2,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin-top: 50px;
-    background: #DE6262;
-    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
+    background:gainsboro;
   }
   
   .green-contact-form {
     /* width: 700px; */
     margin:0 auto;
     border-radius:10px;
-    
   }
   
   .btn{
