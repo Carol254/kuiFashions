@@ -2,13 +2,19 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin-top: 50px;
-    background:gainsboro;
+  }
+  .container{
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom:20px;
   }
   
   .green-contact-form {
     /* width: 700px; */
     margin:0 auto;
-    border-radius:10px;
+    background: #DE6262;
+    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
+    background: linear-gradient(to bottom, #FFB88C, #DE6262);
   }
   
   .btn{
@@ -20,12 +26,26 @@ body {
   .title-form {
     text-align: center;
   }
+  .title-form >h2{
+    color:#DE6262;
+    font-weight: 800;
+	  font-size: 30px;
+  }
+  .title-form >h2:after{
+    content:"";
+    background: #FFB88C;
+    width:200px;
+    height:5px;
+    display: block;
+    margin-top: 5px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
  .contact-info{
   position: relative;
   width: 300px;
- }
- .contact-img{
-  border-radius: 20px;
  }
 
  .bottom{
@@ -36,23 +56,22 @@ body {
    width: 40px;
    height:40px;
   }
+  .form-box >h2{
+    color:#DE6262;
+    font-weight: 800;
+	  font-size: 30px;
+  }
+  .form-box h2:after{
+    content:"";
+    background: #FFB88C;
+    width:200px;
+    height:5px;
+    display: block;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
 
-  .zoom-in-zoom-out {
-    margin: 24px;
-    width:50px;
-    height:50px;
-    animation: zoom-in-zoom-out 2s ease-out infinite;
-  }
+
   
-  @keyframes zoom-in-zoom-out {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.5, 1.5);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
+ 
  
