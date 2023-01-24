@@ -16,4 +16,8 @@
     font-weight: bolder;
     padding-right: 10px;
 }
+.btn{
+    outline:none;
+    border:none;
+}
 
