@@ -226,3 +226,7 @@ button{
 	position: relative;
 	bottom: 5px;
 }
+.categories{
+	width:200px;
+	height: 200px;
+}
