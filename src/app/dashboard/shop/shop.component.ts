@@ -17,6 +17,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ShopComponent implements OnInit  {
 
   products:ProductData[]= [];
+  filterCategories:ProductData[] =[];
   searchKey:string = '';
   searchTerm !:string;
   
@@ -26,7 +27,7 @@ export class ShopComponent implements OnInit  {
 
     this.productService.getProductInfo().subscribe(data =>{
       this.products = data;
-    
+      this.filterCategories = data;
       this.products.forEach((a:ProductData)=>{
         Object.assign(a,{quantity:1,total:a.amount});
       });
@@ -49,6 +50,12 @@ export class ShopComponent implements OnInit  {
     console.log(this.searchTerm);
     this.productService.search.next(this.searchTerm);
   }
- 
+  filter (category:string){
+      this.filterCategories = this.products.filter((a:any)=>{
+        if (a.category == category || category == ''){
+          return a;
+        }
+      })
+  }
 
 }

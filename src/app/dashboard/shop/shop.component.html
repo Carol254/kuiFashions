@@ -7,18 +7,13 @@
 			</div>
 	
 		</form>
-
-	<!-- <form class="search">
-	   <input type="text" class="searchTerm" [(ngModel)]="searchTerm"  (keyup)="searchProducts($event)"    placeholder="Search products...">
-	   <button type="submit" class="">
-		 <i class="material-icons">search</i>
-	  </button>
-	</form> -->
-	<div class="d-flex justify-content-center ">
-			<div class="btn  px-5">Tops</div>
-			<div class="btn  px-5">Jeans</div>
-			<div class="btn  px-5">Dresses</div>
-			<div class="btn  px-5 ">Blazers</div>
+	<div class="d-flex justify-content-center">
+			<div class="categories py-2 px-4" (click)="filter('')">All</div>
+			<div class="categories py-2 px-4 " (click)="filter('tops')">Tops</div>
+			<div class="categories py-2 px-4" (click)="filter('jeans')">Jeans</div>
+			<div class="categories py-2  px-4" (click)="filter('dresses')">Dresses</div>
+			<div class="categories py-2 px-4 " (click)="filter('suits')">Suits</div>
+			<div class="categories py-2 px-4 " (click)="filter('blazers')">Blazers</div>
 
 	</div>
 
@@ -26,7 +21,7 @@
 
 <div class="container mt-5">
     	<div class="row">
-    		<div class="col-md-3" *ngFor="let product of products |filterProducts:searchKey :'name'">
+    		<div class="col-md-3" *ngFor="let product of filterCategories |filterProducts:searchKey :'name'">
     				<div class="card mb-1 mt-4" >
     					<div class="image-container">
     						<div class="first">			

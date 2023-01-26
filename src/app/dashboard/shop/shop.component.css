@@ -71,12 +71,7 @@ body{
 }
 
 
-.btn{
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	padding: 3px;
-}
+
 
 .creme{
 	background-color: #fff;
@@ -177,6 +172,7 @@ button{
 .add-cart{
 	display: flex;
 	justify-content:end;
+
 	
 }
 .buy{
@@ -227,13 +223,14 @@ button{
 	bottom: 5px;
 }
 .categories{
-	width:200px;
-	height: 200px;
+	background-color: purple;
+	color: #fff;
+	border-radius:5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
 }
-.btn{
-	outline: none;
-	border:none;
-}
+
 input[type=text] {
 	width:100%;
 	box-sizing: border-box;
@@ -245,7 +242,7 @@ input[type=text] {
 	background-repeat: no-repeat;
 	padding: 12px 10px 12px 20px;
   }
-  
+
   input[type=text]:focus {
 	border: 2px solid purple;
 	outline: none;
