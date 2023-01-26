@@ -1,9 +1,16 @@
-	<div class="search">
-	   <input type="text" class="searchTerm" [(ngModel)]="searchTerm"  (keyup)="searchProducts($event)"    placeholder="What are you looking for?">
-	   <button type="submit" class="searchButton">
-		 <i class="fa fa-search"></i>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	
+		<form>
+			<input type="text" name="search"[(ngModel)]="searchTerm"  (keyup)="searchProducts($event)"  placeholder="Search..">
+		</form>
+
+	<!-- <form class="search">
+	   <input type="text" class="searchTerm" [(ngModel)]="searchTerm"  (keyup)="searchProducts($event)"    placeholder="Search products...">
+	   <button type="submit" class="">
+		 <i class="material-icons">search</i>
 	  </button>
-	</div>
+	</form> -->
 	<div class="d-flex justify-content-center ">
 			<div class="btn  px-5">Tops</div>
 			<div class="btn  px-5">Jeans</div>
