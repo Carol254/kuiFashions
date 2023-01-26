@@ -2,7 +2,10 @@
 
 	
 		<form>
-			<input type="text" name="search"[(ngModel)]="searchTerm"  (keyup)="searchProducts($event)"  placeholder="Search..">
+			<div class="m-4">
+				<input type="text" name="search"[(ngModel)]="searchTerm"  (keyup)="searchProducts($event)"  placeholder="Search Products Here...">
+			</div>
+	
 		</form>
 
 	<!-- <form class="search">
