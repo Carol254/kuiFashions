@@ -106,6 +106,87 @@
         "amount":950,
         "category":"dresses",
         "qty":1
+      },
+      {
+        "id":"13",
+        "name":"Black ng'ara Bag",
+        "description":"Awesome Designer Black Bag",
+        "img":"/assets/designer-bag.jpg",
+        "amount":750,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"14",
+        "name":"Black ng'ara Bag",
+        "description":"Medium-sized Black Bag",
+        "img":"/assets/designer-bag-1.jpg",
+        "amount":800,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"15",
+        "name":"Brown ng'ara Bag",
+        "description":"small-sized Bag",
+        "img":"/assets/designer-bag-2.jpg",
+        "amount":450,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"16",
+        "name":"Beige ng'ara Bag",
+        "description":"small-sized Bag",
+        "img":"/assets/designer-bag-3.jpg",
+        "amount":850,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"17",
+        "name":"Black ng'ara Bag",
+        "description":"Awesome medium Black Bag",
+        "img":"/assets/designer-bag-4.jpg",
+        "amount":950,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"18",
+        "name":"Pink ng'ara Bag",
+        "description":"Awesome Designer Bag",
+        "img":"/assets/designer-bag-5.jpg",
+        "amount":950,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"19",
+        "name":"Black ng'ara Bag",
+        "description":"small-sized Black Bag",
+        "img":"/assets/designer-bag-6.jpg",
+        "amount":350,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"20",
+        "name":"Black ng'ara Bag",
+        "description":"Awesome medium Black Bag",
+        "img":"/assets/designer-bag-7.jpg",
+        "amount":750,
+        "category":"designer-bags",
+        "qty":1
+      },
+      {
+        "id":"21",
+        "name":"Hot Pink ng'ara Bag",
+        "description":"Awesome Designer Pink Bag",
+        "img":"/assets/designer-bag-8.jpg",
+        "amount":750,
+        "category":"designer-bags",
+        "qty":1
       }
     
     ]
