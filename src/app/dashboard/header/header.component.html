@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">NG'ARA FASHIONS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,4 +43,52 @@
         </div>
       </div>
     </div>
+  </nav> -->
+
+  <nav>
+    <div class="nav-left">
+      <a class="navbar-brand" href="#">NG'ARA FASHIONS</a>
+    </div> 
+    <div class="nav-middle">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" 
+          routerLink="dashboard/shop"
+          routerLinkActive="active"
+          >SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"
+          routerLink="dashboard/about-us"
+          routerLinkActive="active"
+          >ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"
+          routerLink="dashboard/insights"
+          routerLinkActive="active"
+          >INSIGHTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"
+          routerLink="dashboard/contact-us"
+          routerLinkActive="active"
+          >CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="d-flex">
+        <div class="cart py-2" routerLink="dashboard/cart"><img src="\assets\the-cart.svg">
+          <div style="font-size: 15px;" class="badge bg-danger">{{totalItems}}</div>
+        </div>
+        <div class="btn px-3"(click)="onSignIn()">Sign In</div>
+        <div class="btn"(click)="onSignUp()">Sign Up</div>
+      </div>
+    
+    </div>
   </nav>
+  
