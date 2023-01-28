@@ -68,7 +68,7 @@ export class ShoppingCartComponent implements OnInit {
     })
    }
 
-   signIn(){
-    this.router.navigate(['dashboard/home/sign-in']);
+   checkOut(){
+    this.router.navigate(['dashboard/shop/cart/checkout']);
    }
 }
