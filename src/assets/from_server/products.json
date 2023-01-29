@@ -76,7 +76,7 @@
         "name":"Pink Top",
         "description":"Awesome Pink top",
         "img":"/assets/pink-top.jpg",
-        "Amount":500,
+        "amount":500,
         "category":"tops",
         "qty":1
       },
