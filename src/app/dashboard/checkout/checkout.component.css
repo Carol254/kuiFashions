@@ -464,7 +464,7 @@ h3.topborder span {
 
 header
 {
-	height: 250px;
+	height: 100px;
 	background-image: url('http://lorempixel.com/1920/500');
 	background-size: cover;
 	text-align: center;
