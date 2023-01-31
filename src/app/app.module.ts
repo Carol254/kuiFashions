@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { APP_BASE_HREF } from '@angular/common';
@@ -19,6 +20,7 @@ import { ShoppingItemComponent } from './dashboard/shop/shopping-item/shopping-i
 import { ShoppingCartComponent } from './dashboard/shopping-cart/shopping-cart.component';
 import { FilterProductsPipe } from './pipes/filter-products.pipe';
 import { CheckoutComponent } from './dashboard/checkout/checkout.component';
+import {AngularFireModule} from '@angular/fire/compat';
 
 const appRoutes:Routes =[
   {path:'',redirectTo:'dashboard',pathMatch:'full'},
@@ -64,6 +66,7 @@ const appRoutes:Routes =[
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'} 
