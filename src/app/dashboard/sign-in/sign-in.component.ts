@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 @Component({
@@ -9,7 +10,10 @@ import {Router} from '@angular/router';
 })
 export class SignInComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  email:string ='';
+  password:string ='';
+
+  constructor(private router:Router,private auth:AuthService) { }
 
 
   ngOnInit(): void {
@@ -21,4 +25,19 @@ export class SignInComponent implements OnInit {
  onNewUser(){
   this.router.navigate(['dashboard/home/sign-up']);
  }
+ logIn(){
+  if (this.email == ''){
+    alert('Please enter email');
+    return;
+  }
+  if (this.password == ''){
+    alert('Please enter password');
+    return;
+  }
+  this.auth.logIn(this.email,this.password);
+  this.email ='';
+  this.password ='';
+
+ }
+
 }
