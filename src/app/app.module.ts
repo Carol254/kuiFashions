@@ -21,6 +21,8 @@ import { ShoppingCartComponent } from './dashboard/shopping-cart/shopping-cart.c
 import { FilterProductsPipe } from './pipes/filter-products.pipe';
 import { CheckoutComponent } from './dashboard/checkout/checkout.component';
 import {AngularFireModule} from '@angular/fire/compat';
+import { ForgotPasswordComponent } from './dashboard/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './dashboard/verify-email/verify-email.component';
 
 const appRoutes:Routes =[
   {path:'',redirectTo:'dashboard',pathMatch:'full'},
@@ -39,7 +41,9 @@ const appRoutes:Routes =[
   {path:'dashboard/home/sign-up',component:SignUpComponent},
   {path:'dashboard/home/sign-in',component:SignInComponent},
   {path:'dashboard/shop/shopping-item',component:ShoppingItemComponent},
-  {path:'dashboard/shop/cart/checkout',component:CheckoutComponent}
+  {path:'dashboard/shop/cart/checkout',component:CheckoutComponent},
+  {path:'dashboard/verify-email',component:VerifyEmailComponent},
+  {path:'dashboard/forgot-password',component:ForgotPasswordComponent}
 
 ];
 
@@ -58,7 +62,9 @@ const appRoutes:Routes =[
     ShoppingItemComponent,
     ShoppingCartComponent,
     FilterProductsPipe,
-    CheckoutComponent
+    CheckoutComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     HttpClientModule,
