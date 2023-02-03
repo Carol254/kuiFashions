@@ -7,7 +7,7 @@
     position: absolute;
   }
 .banner-img {
-    margin: 80px 115px;
+    margin: 40px 115px;
     width: 60%;
   }
 .banner-img img {
@@ -278,3 +278,19 @@
   }
 }
 
+/* for larger screens */
+@media screen and (min-width: 1400px) {
+  .banner-img {
+    margin: 80px 185px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .banner-img {
+    margin: 80px 185px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .banner-img {
+    margin: 80px 185px;
+  }
+}
