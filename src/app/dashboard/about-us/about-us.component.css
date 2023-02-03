@@ -54,7 +54,7 @@ position: relative;
 display: block;
 font-size: 24px;
 line-height: 24px;
-color: #f992a6;
+color: #9F2C75;;
 font-weight: 500;
 margin-bottom: 15px;
 margin-top: 20px;
@@ -146,14 +146,14 @@ padding: 10px 30px;
 font-weight: 600;
 overflow: hidden;
 letter-spacing: 0.02em;
-background-color: #f992a6;
+background-color: #9F2C75;;
 border:none;
 outline:none;
 border-radius: 7px;
 }
 
 .btn-style-one:hover{
-background-color: #f992a6;
+background-color: #9F2C75;;
 color: #ffffff;
 }
 .about-section{
@@ -219,7 +219,7 @@ padding-bottom: 0px;
 position: absolute;
 bottom: 16px;
 z-index: 1;
-background: #f992a6;
+background: #9F2C75;;
 padding: 10px 15px;
 left: 96px;
 width: calc(100% - 152px);
@@ -249,7 +249,7 @@ top: -80px;
 left: -3px;
 background: transparent;
 z-index: 0;
-border: 44px solid #f992a6;
+border: 44px solid #9F2C75;;
 }
 
 .about-section .image-column .image-1{

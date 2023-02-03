@@ -11,9 +11,8 @@
     color: #000;
     margin: 0;
     padding: 0;
-    background: #DE6262;
-    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
-    background: linear-gradient(to bottom, #FFB88C, #DE6262);
+    background: #FAEEFA;;
+   
   }
   .testimonial-container{
     padding-top:50px;

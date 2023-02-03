@@ -12,9 +12,9 @@ body {
   .green-contact-form {
     /* width: 700px; */
     margin:0 auto;
-    background: #DE6262;
-    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
-    background: linear-gradient(to bottom, #FFB88C, #DE6262);
+    background: #FAEEFA;
+    height: 100vh;
+  
   }
   
   .btn{

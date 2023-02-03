@@ -49,7 +49,7 @@
     content: "";
     height:100px;
     width:200px;
-    background-color: #f992a6;
+    background-color: #9F2C75;;
     position: absolute;
     top:-10px;
     left:-10px;
@@ -59,7 +59,7 @@
     content: "";
     height: 100px;
     width: 200px;
-    background-color: #f992a6;
+    background-color: #9F2C75;;
     position: absolute;
     top: -10px;
     right: -10px;
@@ -107,9 +107,10 @@
     height:100%;
   }
   .about-us{
-    background-color: #f992a6;
+    background-color: #9F2C75;;
     background-size:cover;
     background-position: center;
+    color:#000;
   }
   .row{
     margin: initial !important;
@@ -131,8 +132,6 @@
     text-align: center;
   }
   .about-us img{
-    width:300px;
-    height: 500px;
     margin-bottom: -100px;
     margin-top: 100px;
   }
@@ -219,6 +218,10 @@
   width:20px;
   height:20px;
   cursor: pointer;
+}
+
+.about-img{
+  border-radius: 5px;
 }
  /* for small devices */
 
