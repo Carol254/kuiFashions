@@ -9,24 +9,31 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   constructor(private fireauth:AngularFireAuth,private router:Router) { }
+
   //login Method
   logIn(email:string,password:string){
-    this.fireauth.signInWithEmailAndPassword(email,password).then(()=>{
+    this.fireauth.signInWithEmailAndPassword(email,password).then(res =>{
       localStorage.setItem('token','true');
-      this.router.navigate(['dashboard/shop/cart/checkout']);
+
+      if (res.user?.emailVerified == true){
+        this.router.navigate(['dashboard/shop/cart/checkout']);
+      } else {
+        this.router.navigate (['dashboard/verify-email']);
+      }
+
     },err=>{
       alert(err.message);
       this.router.navigate(['dashboard/home/sign-in']);
     })
   }
-//register method
-  register(email:string,password:string){
-    this.fireauth.createUserWithEmailAndPassword(email,password).then(()=>{
-      alert('Registration successfull');
-    this.router.navigate(['dashboard/home/sign-in']);
 
-    },
-    err=>{
+  //register method
+  register(email:string,passsword:string){
+    this.fireauth.createUserWithEmailAndPassword(email,passsword).then(res =>{
+      alert('Registration successfull');
+      this.router.navigate(['dashboard/home/sign-in']);
+      this.sendEmailForVerification(res.user);
+    },err =>{
       alert(err.message);
       this.router.navigate(['dashboard/home/sign-up']);
     })
@@ -50,6 +57,15 @@ export class AuthService {
     },err=>{
       alert('Something went wrong');
     })
+  }
+
+  sendEmailForVerification(user:any){
+    user.sendEmailVerification().then((res:any)=>{
+      this.router.navigate(['dashboard/verify-email']);
+    },(err:any)=>{
+      alert('Something went wrong,not able to register email');
+    }
+    )
   }
 
 }
