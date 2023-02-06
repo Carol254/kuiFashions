@@ -81,6 +81,10 @@
     background-color: #111;
     color: #fff;
   }
+  .badge{
+    padding: 3px;
+    border-radius: 50%;
+}
   
   /* Media Queries */
   @media only screen and (max-width: 600px) {
