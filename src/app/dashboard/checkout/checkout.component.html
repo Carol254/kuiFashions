@@ -4,53 +4,6 @@
 <div class="white-space"></div>
 <div class="wrapper">
     <div class="row">
-        <div class="col-12 col">
-            <div class="info-bar">
-                <p>
-                    <i class="fa fa-info"></i> 
-                    Returning customer? <a href="#">Click here to login</a>
-                </p>
-            </div>
-            <p>
-                If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col">
-            <form method="get" class="user-pswd">
-                <div class="width50 padright">
-                    <label for="username">Username or email</label>
-                    <input type="text" name="username" id="username" required>
-                </div>
-                <div class="width50">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
-                </div>
-                    <input type="submit" name="submit" value="Login"><input type="checkbox" value="1" name="checkbox"><p>Remember me</p>
-            </form>
-            <p><a href="#">Lost your password?</a></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col">
-            <div class="info-bar">
-                <p>
-                    <i class="fa fa-info"></i> 
-                    Have a coupon? <a href="#">Click here to enter your code</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6 col coupon">
-            <form method="get">
-                <input type="text" name="coupon" id="coupon" placeholder="Coupon code">
-                <input type="submit" name="submit" value="Apply Coupon">
-            </form>
-        </div>
-    </div>
-    <div class="row">
         <form method="get">
             <div class="col-7 col">
                 <h3 class="topborder"><span>Billing Details</span></h3>
@@ -75,20 +28,9 @@
                 <label for="city">Town / City</label>
                 <input type="text" name="city" id="city" required>
                 <div class="width50 padright">
-                    <label for="province">Province</label>
-                    <select name="province" id="province" required>
-                        <option value="">Please select a province</option>
-                        <option value="ab">Alberta</option>
-                        <option value="bc">British Columbia</option>
-                        <option value="mb">Manitoba</option>
-                        <option value="nb">New Brunswick</option>
-                        <option value="nl">Newfoundland and Labrador</option>
-                        <option value="ns">Nova Socia</option>
-                        <option value="on">Ontario</option>
-                        <option value="pe">Prince Edward Island</option>
-                        <option value="qc">Quebec</option>
-                        <option value="sk">Saskatchewan</option>
-                        <option value="not-canada">Not Canada</option>
+                    <label for="province">Sub-County</label>
+                    <select name="sub-county" id="sub-county" required>
+                        <option value="">Please select a sub-county</option>
                     </select>
                 </div>
                 <div class="width50">
