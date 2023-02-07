@@ -1,4 +1,6 @@
+import { ProductData } from './../../models/product-detail.model';
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-checkout',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
+
+  productList:ProductData[]=[];
+  
   counties =[
             "Mombasa",
             "Kwale",
@@ -57,9 +62,13 @@ export class CheckoutComponent implements OnInit {
             "Nairobi"
   ]
 
-  constructor() { }
+  constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
+    this.productService.getProducts().subscribe(resp=>{
+      this.productList = resp;
+    });
   }
+  
 
 }

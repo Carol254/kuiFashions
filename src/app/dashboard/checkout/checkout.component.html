@@ -61,7 +61,10 @@
                     <div class="qty inline"><span class="smalltxt">x</span> 1</div>
                     
                 </div>
-                <div><h5>Cart Subtotal</h5></div>
+                <div>
+                    <h5>Cart Subtotal</h5>
+                    <h6 *ngFor="let item of productList">{{item.amount}}</h6>
+                </div>
                 <div>
                     <h5 class="inline difwidth">Shipping and Handling</h5>
                     <p class="inline alignright center">Free Shipping</p>
