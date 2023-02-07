@@ -56,9 +56,8 @@
                 <h3 class="topborder"><span>Billing Details</span></h3>
                 <label for="country">Country</label>
                 <select name="country" id="country" required>
-                    <option value="">Please select a country</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Not Canada">Not Canada</option>
+                    <option value="default">Please select county.....</option>
+                    <option *ngFor="let county of counties" [value]="county">{{county}}</option>
                 </select>
                 <div class="width50 padright">
                     <label for="fname">First Name</label>
